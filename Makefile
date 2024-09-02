@@ -6,14 +6,14 @@
 #    By: tpipi <tpipi@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/14 13:44:44 by tpipi             #+#    #+#              #
-#    Updated: 2024/09/02 18:41:07 by tpipi            ###   ########.fr        #
+#    Updated: 2024/09/02 19:56:14 by tpipi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fun
 
 CC = cc
-CFLAGS = -g #-Wall -Wextra -Werror
+CFLAGS = -g -Wall -Wextra -Werror
 RM = rm -f
 
 FILES = main.c get_next_line.c get_next_line_utils.c
@@ -22,14 +22,18 @@ OBJ = $(addprefix obj/, $(FILES:.c=.o))
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): mkdir $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+
+mkdir :
+	mkdir -p obj
 
 obj/%.o : src/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)
+	rmdir obj
 
 fclean: clean
 	$(RM) $(NAME)
