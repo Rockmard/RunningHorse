@@ -6,11 +6,11 @@
 #    By: tpipi <tpipi@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/14 13:44:44 by tpipi             #+#    #+#              #
-#    Updated: 2024/09/02 19:56:14 by tpipi            ###   ########.fr        #
+#    Updated: 2024/09/03 23:20:29 by tpipi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fun
+NAME = horse
 
 CC = cc
 CFLAGS = -g -Wall -Wextra -Werror

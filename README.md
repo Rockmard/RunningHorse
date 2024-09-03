@@ -3,7 +3,7 @@ A horse, an ASCII one, and he's running.
 
 If you ever feeling down while coding, the Ascii horse will be there to save you.<br>
 Just launch the Makefile using **make** or **make re**.<br>
-It should create a file named ***fun***, just start the programm (using ./fun for example in the console).<br>
+It should create a file named ***horse***, just start the programm (using ./horse for example in the console).<br>
 The horse should be running.<br>
 
 To exit, just kill the programm (using CTRL+C for instance).<br>
