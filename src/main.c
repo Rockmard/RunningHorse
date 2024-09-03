@@ -6,7 +6,7 @@
 /*   By: tpipi <tpipi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 17:01:09 by tpipi             #+#    #+#             */
-/*   Updated: 2024/09/02 19:23:05 by tpipi            ###   ########.fr       */
+/*   Updated: 2024/09/03 22:44:03 by tpipi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,12 @@ char	*ft_get_ascii(char *path)
 	fd = open(path, O_RDONLY);
 	if (fd == -1)
 		return (NULL);
+	nl = get_next_line(fd);
 	while (nl)
 	{
-		nl = get_next_line(fd);
 		ascii = ft_strjoin(ascii, nl);
 		free(nl);
+		nl = get_next_line(fd);
 	}
 	close(fd);
 	return (ascii);
