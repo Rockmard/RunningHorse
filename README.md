@@ -8,6 +8,9 @@ The horse should be running.
 
 To exit, just kill the programm (using CTRL+C for instance).
 
-### Credits :
+## This should look like this :
+[![demo.gif](https://github.com/Rockmard/RunningHorse/blob/main/ascii/demo.gif?raw=true)](https://www.youtube.com/watch?v=u5Ho1trvlro&pp=ygULcGV0aXQgcG9uZXk%3D)
+
+## Credits :
 - https://github.com/posenberg/Horse-Racing-Animation/blob/master/horse_animation.py
 for the ascii art (I don't know if he drew them but that's where I find it).
