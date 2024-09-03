@@ -12,6 +12,9 @@ The code follows the 42norm btw.
 ## This should look like this :
 [![demo.gif](https://github.com/Rockmard/RunningHorse/blob/main/ascii/demo.gif?raw=true)](https://www.youtube.com/watch?v=u5Ho1trvlro&pp=ygULcGV0aXQgcG9uZXk%3D)
 
+## Important notes
+You need the ascii folder with the executable in order to make it work.
+
 ## Credits :
 - https://github.com/posenberg/Horse-Racing-Animation/blob/master/horse_animation.py<br>
 for the ascii art (I don't know if he drew them but that's where I find it).
