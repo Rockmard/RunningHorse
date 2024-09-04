@@ -6,7 +6,7 @@
 /*   By: tpipi <tpipi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 17:01:09 by tpipi             #+#    #+#             */
-/*   Updated: 2024/09/03 22:44:03 by tpipi            ###   ########.fr       */
+/*   Updated: 2024/09/04 02:06:26 by tpipi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,14 +79,14 @@ int	main(void)
 
 	img_to_print = malloc(sizeof(char) * 5);
 	if (!img_to_print)
-		return (0);
+		return (1);
 	nb_img = 0;
 	while (1)
 	{
 		free(img_to_print);
 		path = ft_get_path(nb_img);
 		if (!path)
-			return (0);
+			return (1);
 		img_to_print = ft_get_ascii(path);
 		free(path);
 		printf("%s", img_to_print);
@@ -97,5 +97,5 @@ int	main(void)
 			nb_img = 0;
 	}
 	printf("\e[1;1H\e[2J");
-	return (1);
+	return (0);
 }
